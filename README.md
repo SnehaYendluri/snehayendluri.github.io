@@ -8,7 +8,7 @@
 - JS
 
 ## In-Class Assignments
-- [ICA1](snehayendluri.github.io/ica/ICA1.html)
+- [ICA1](https://snehayendluri.github.io/ica/ICA1.html)
 - ICA2
 - ICA3
 - ICA4
@@ -26,7 +26,7 @@
 
 ## Weekly Assignments
 
-- [WA1](snehayendluri.github.io/wa/wa1.html)
+- [WA1](https://snehayendluri.github.io/wa/wa1.html)
 - WA2
 - WA3
 - WA4
