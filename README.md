@@ -8,7 +8,7 @@
 - JS
 
 ## In-Class Assignments
-- [ICA1](https://docs.google.com/document/d/12KLBNyWLSXGA2kVGh5bn5BIZA17RCTOEF6PK6Bf6YZg/edit?usp=share_link)
+- [ICA1](https://drive.google.com/file/d/1PUBisxotpbDWGiGvWXvX--efXUe9oAc8/view?usp=share_link)
 - ICA2
 - ICA3
 - ICA4
