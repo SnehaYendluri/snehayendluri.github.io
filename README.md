@@ -26,7 +26,7 @@
 
 ## Weekly Assignments
 
-- [WA1](https://snehayendluri.github.io)
+- [WA1](https://snehayendluri.github.io/wa/wa1.html)
 - WA2
 - WA3
 - WA4
