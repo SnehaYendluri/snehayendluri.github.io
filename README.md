@@ -8,7 +8,7 @@
 - JS
 
 ## In-Class Assignments
-- [ICA1](ica/ICA1 -- How to Search.pdf)
+- [ICA1](https://drive.google.com/file/d/1PUBisxotpbDWGiGvWXvX--efXUe9oAc8/view?usp=share_link)
 - ICA2
 - ICA3
 - ICA4
