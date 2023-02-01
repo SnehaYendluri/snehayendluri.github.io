@@ -10,7 +10,8 @@
 ## In-Class Assignments
 - [ICA1](ica/ICA1.pdf)
 - [ICA2](ica/ICA2.pdf)
-- ICA3
+- [ICA3a](https://snehayendluri.github.io/ica/ica3a.html) 
+- [ICA3b](https://snehayendluri.github.io/ica/ica3_part2/index.html)
 - ICA4
 - ICA5
 - ICA6
@@ -28,7 +29,7 @@
 
 - [WA1](https://snehayendluri.github.io/wa/wa1.html)
 - [WA2](https://snehayendluri.github.io/wa/wa2.html)
-- WA3
+- WA3a
 - WA4
 - WA5
 - WA6
