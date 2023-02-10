@@ -42,3 +42,12 @@
 - WA13
 - WA14
 - WA15
+
+## Midterm pages
+
+- [P1](https://snehayendluri.github.io/html-midterm/page1.html)
+- [P2](https://snehayendluri.github.io/html-midterm/page2.html)
+- [P3](https://snehayendluri.github.io/html-midterm/page3.html)
+- [P4](https://snehayendluri.github.io/html-midterm/page4.html)
+- WA5
+- WA6
