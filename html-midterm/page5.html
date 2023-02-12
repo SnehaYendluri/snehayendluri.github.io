@@ -21,25 +21,47 @@
         <span> | </span>
     </div>
     <p> Page 1</p>
-    <ul>
-        <li>Fixed the em tag: the closing tag was '<m>' and I changed it to '</em>' </li>
-    </ul>
+    <ol>
+        <li> I added the docutype tag before head. </li>
+        <li> I added the meta tags before head and after the docutpe. </li>
+        <li> I Fixed the closing em tag </li>
+        <li> We added the closing html tag </li>
+        <li> ???? </li>
+    </ol>
 
     <p> Page 2</p>
-    <ul>
-        <li>Fixed the b tag: '<b>' New Beehive Inn '</b>' </li>
-        <li> added a p tag since there was an ending p tag </li>
-        <li> h2 tag was inside the bold tag, changed the bold tag to be inside of h2 tag </li>
-        <li> changed the href of the a tag to a link so that it doesn't show up as an error</li>
-    </ul>
+    <ol>
+        <li> The phrase 'New Beehive Inn' doesn't have a bold closing tag. I added the b tag. </li>
+        <li> All the headings have different html tags varying form h2 to h6. It is best to have the same heading to contain the uniformity. So I changed all the headings to h2 tag. </li>
+        <li> Element h2 cannot be a child of element b in this context. So I changed the bold tag to be inside of h2 tag.  </li>
+        <li> Changed the href of the a tag to a link since it is expecting one without any spaces. </li>
+    </ol>
 
     <p> Page 3</p>
-    <ul>
-        <li>Fixed the b tag: '<b>' New Beehive Inn '</b>' </li>
-        <li> added a p tag since there was an ending p tag </li>
-        <li> h2 tag was inside the bold tag, changed the bold tag to be inside of h2 tag </li>
-        <li> changed the href of the a tag to a link so that it doesn't show up as an error</li>
-    </ul>
+    <ol>
+        <li> Element l not allowed as child of element ul in this context. So I changed the l element to li inside ul. </li>
+        <li> There was no closing tag for td, so I need to add that to the line "lilly"</li>
+        <li> The td tag can only have the same or less number of cells as the tag th. 
+            In this scenario, the tag th has only 3 cells but td tag has 4 cells which doesn't work. 
+            In order to fix this I need to increase the header cell or decrease the td tag cells. </li>
+            <ul>
+                <li> Lilly should be in the next tr tag under td tag since it is the first name and doing so I'll have 3 cells in this tag. </li>   
+                <li> 22 should be in the previous tr tag under td tag since it is the age and doing so I'll have 3 cells in this tag. </li>   
+                <li> Axelia should be in the next tr tag under td tag since it is the first name and doing so I'll have 3 cells in this tag. </li>  
+            </ul>
+    </ol>
+
+    <p> Page 4</p>
+    <ol>
+        <li> It is missing the docutype html at the beginning of the file </li> 
+        <li> An img element must have an alt attribute, except under certain conditions. All the images on the html file didn't have the alt attribute which I need to add.</li> 
+        <ul>
+            <li> Added alt attributes to the dogFrolic, dogSinging, labLab, boxingCats, orangeCat, sunCat, dimaondAlien, creature, aiensPeace images </li>
+        </ul>
+        <li> Since the orange cat image is under a table it should have a td tag (opening and closing tags). </li>
+        <li> Since the creature image is under a table it should have an opening td tag. </li>
+        
+    </ol>
       
       
 </body>
