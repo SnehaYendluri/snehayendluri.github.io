@@ -13,7 +13,7 @@
 - [ICA3a](https://snehayendluri.github.io/ica/ica3a.html) 
 - [ICA3b](https://snehayendluri.github.io/ica/ica3_part2/index.html)
 - [ICA4](https://snehayendluri.github.io/ica/ica4.html)
-- ICA5
+- [ICA5](https://snehayendluri.github.io/ica/ica5.html)
 - ICA6
 - ICA7
 - ICA8
@@ -31,7 +31,7 @@
 - [WA2](https://snehayendluri.github.io/wa/wa2.html)
 - [WA3](https://snehayendluri.github.io/wa/wa3.html)
 - [WA4](https://snehayendluri.github.io/wa/wa4.html)
-- WA5
+- [WA5](https://snehayendluri.github.io/wa/wa5.html)
 - WA6
 - WA7
 - WA8
@@ -42,12 +42,3 @@
 - WA13
 - WA14
 - WA15
-
-## Midterm pages
-
-- [P1](https://snehayendluri.github.io/html-midterm/page1.html)
-- [P2](https://snehayendluri.github.io/html-midterm/page2.html)
-- [P3](https://snehayendluri.github.io/html-midterm/page3.html)
-- [P4](https://snehayendluri.github.io/html-midterm/page4.html)
-- WA5
-- WA6
