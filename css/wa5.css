@@ -1,0 +1,98 @@
+body, html {
+    height: 100%; 
+    margin: 0%;
+}
+
+
+#backgroundimg {
+    min-width: 100%;
+    min-height: 100%;
+}
+
+#bbc {
+    width: 100px;
+}
+
+#overlay1{
+    position: fixed; 
+    top: 10px; 
+    right: 2px; 
+}
+
+#over{ 
+    position: fixed; 
+    bottom: 3em; 
+    left: 50%; 
+    transform: translate(-50%, 0); 
+    text-align: center; 
+    background-color: black;
+    border-radius: 0.5em; 
+    width: 20em;
+    height: 3em;
+    padding: 5px; 
+}
+
+#text
+{
+    color: white;
+    text-align: center;
+}
+
+
+#APlayer
+{
+    background-color: rgba(216, 236, 209, 0.795);
+    position:fixed; 
+    right: 5px; 
+    border-radius: 0.25em;
+    font-size: 0.75em;
+    padding: 0.5em; 
+    padding-bottom: 0%;
+    font-weight: bold;
+    height: 2em; 
+    width: 10em; 
+}
+
+#Ascore
+{
+    background-color:  rgba(14, 145, 201, 0.795);
+    position:absolute; 
+    right: 113px; 
+    border-radius: 0.25em;
+    font-size: 0.75em;
+    padding: 0.5em; 
+    padding-bottom: 0%;
+    font-weight: bold;
+    height: 2em; 
+    width: 1em; 
+}
+
+#BPlayer
+{
+    background-color:rgba(216, 236, 209, 0.795);
+    position:absolute; 
+    border-radius: 0.25em;
+    font-size: 0.75em;
+    padding: 0.5em; 
+    padding-bottom: 0%;
+    font-weight: bold;
+    height: 2em; 
+    width: 10em;
+    color: rgb(137, 17, 17);
+}
+
+#Bscore
+{
+    background-color:  rgba(14, 145, 201, 0.795);
+    position:absolute; 
+    left: 113px; 
+    border-radius: 0.25em;
+    font-size: 0.75em;
+    padding: 0.5em; 
+    padding-bottom: 0%;
+    font-weight: bold;
+    height: 2em; 
+    width: 1em; 
+    color: rgb(137, 17, 17);
+}
+
