@@ -1,0 +1,22 @@
+body{
+    background-color: beige;
+}
+#namebox{
+
+    position: sticky;
+    width: 70vw;
+    height: 175vw;
+    border-radius: 10px;
+    background-color: white;
+    top: 10px;
+    left: 220px; 
+    /* width: 50%; */
+}
+
+#name
+{
+    text-align: center;
+    position: sticky;
+    top: 0;
+    font-size: 30px;
+}
