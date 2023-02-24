@@ -1,15 +1,13 @@
 body{
-    background-color: beige;
+    background-color: #EEE6E1;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 #namebox{
 
     position: sticky;
-    width: 70vw;
-    height: 175vw;
+    top: 0; 
     border-radius: 10px;
-    background-color: white;
-    top: 10px;
-    left: 220px; 
+    color: #280003; 
     /* width: 50%; */
 }
 
@@ -20,3 +18,95 @@ body{
     top: 0;
     font-size: 30px;
 }
+/* Nav bar on the top */
+
+nav {
+    padding: .5em;
+    top: 0; 
+  }
+  
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  nav a {
+    color: #8C705F;
+    text-decoration: none;
+    padding: .5em 1em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold; 
+  }
+
+  .social-icons a {
+    border-radius: 50px;
+    color: #3f345f;
+    display: inline-block;
+    line-height: 52px;
+    height: 50px;
+    width: 50px;
+    box-shadow: 0 5px 25px rgba(93, 70, 232, 0.15);
+    margin: 15px 15px;
+    font-size: 22px;
+}
+
+/* Social media buttons */
+.social_media
+{
+    position: fixed;
+    bottom: 0px;
+    left: 100px;
+}
+.button {
+    background-color: #280003; /* Green */
+    border: none;
+    color: #EEE6E1;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+  }
+
+  .button:hover {
+    background-color: #8C705F;
+    }
+
+    /* changes appearance for smaller screens like mobiles */
+  @media only screen and (max-width: 500px)
+  { /* before it reaches 500px then applies the following */
+      body {
+          background-color: #280003; 
+        }
+
+    #namebox{
+        color: #EEE6E1; 
+    }
+    
+    nav {
+        position:static;  
+    }
+    
+    nav ul {
+        display: flex; 
+        flex-direction: row;
+    }
+
+    .button {
+        background-color: #8C705F;
+        }
+    .button:hover {
+        background-color: #280003;
+    }
+    
+
+  
+  }
