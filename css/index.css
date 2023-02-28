@@ -53,6 +53,12 @@ nav {
     font-size: 22px;
 }
 
+#aboutme
+{
+    text-align: center;
+    font-size:xx-large; 
+}
+
 /* Social media buttons */
 .social_media
 {
@@ -106,7 +112,5 @@ nav {
     .button:hover {
         background-color: #280003;
     }
-    
 
-  
   }
