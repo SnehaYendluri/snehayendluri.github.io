@@ -17,7 +17,7 @@
 - [ICA6_part1](https://snehayendluri.github.io/ica/ica6/ica6_part1.html)
 - [ICA6_part2](https://snehayendluri.github.io/ica/ica6/ica6_part2.html)
 - [ICA6_part3](https://snehayendluri.github.io/ica/ica6/ica6_part3.html)
-- ICA7
+- [ICA7](https://snehayendluri.github.io/ica/ica7.html)
 - ICA8
 - ICA9
 - ICA10
@@ -35,7 +35,7 @@
 - [WA4](https://snehayendluri.github.io/wa/wa4.html)
 - [WA5](https://snehayendluri.github.io/wa/wa5.html)
 - [WA6](https://snehayendluri.github.io/wa/wa6/index.html)
-- WA7
+- [WA7](https://snehayendluri.github.io/wa/wa7.html)
 - WA8
 - WA9
 - WA10
