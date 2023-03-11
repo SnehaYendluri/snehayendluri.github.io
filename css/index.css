@@ -3,8 +3,6 @@ body{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 #namebox{
-
-    position: sticky;
     top: 0; 
     border-radius: 10px;
     color: #280003; 
@@ -13,16 +11,34 @@ body{
 
 #name
 {
-    text-align: center;
-    position: sticky;
+    text-align: left;
+    padding-left: 5%;
     top: 0;
     font-size: 30px;
 }
+
+#pronouns
+{
+    text-align: left;
+    padding-left: 5%;
+    top: 0;
+    font-size: 20px;
+}
+
+#hi
+{
+    text-align: left;
+    padding-left: 5%;
+    top: 0;
+    font-size: 20px;
+}
+
 /* Nav bar on the top */
 
 nav {
     padding: .5em;
     top: 0; 
+    position: sticky; 
   }
   
   nav ul {
@@ -41,6 +57,10 @@ nav {
     font-weight: bold; 
   }
 
+  nav a:hover{
+    color:#280003;
+}
+
   .social-icons a {
     border-radius: 50px;
     color: #3f345f;
@@ -55,14 +75,43 @@ nav {
 
 #aboutme
 {
-    text-align: center;
-    font-size:xx-large; 
+    font-size:large; 
+    padding-left: 3%;
 }
+
+img{
+  transition: 2s;
+}
+
+img:hover{
+  opacity: 0.5;
+  
+}
+
+.grid {
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 980px;
+    display: grid; 
+    grid-gap: 10px 10px;
+    grid-template-columns: 3fr 1fr;
+  }
+
+.photos {
+    list-style: none;
+    width: 20px; 
+    height: 20; 
+    margin: 0;
+    padding: 0;
+    display: grid; 
+    grid-gap: 1px;
+    grid-template-columns: 1fr 1fr;
+  }
 
 /* Social media buttons */
 .social_media
 {
-    position: fixed;
+  text-align: center;
     bottom: 0px;
     left: 100px;
 }
@@ -80,31 +129,59 @@ nav {
     border-radius: 12px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
+    display:inline-block;
   }
 
   .button:hover {
     background-color: #8C705F;
     }
 
+
+    #pot {
+      bottom: 15%;
+      position: absolute;
+      animation: linear infinite alternate;
+      animation-name: run;
+      animation-duration: 5s;
+    }
+    @keyframes run {
+      0% {
+        left: 0;
+      }
+      50% {
+        right: 0;
+      }
+      100% {
+        left: 0;
+        transform: scaleX(-1);
+      }
+    }
+
     /* changes appearance for smaller screens like mobiles */
   @media only screen and (max-width: 500px)
   { /* before it reaches 500px then applies the following */
       body {
-          background-color: #280003; 
+        background-color: black; 
+        color: #EEE6E1;
         }
 
     #namebox{
         color: #EEE6E1; 
     }
     
-    nav {
-        position:static;  
+    nav { 
+        position: sticky; 
+        background-color: black;
     }
     
     nav ul {
         display: flex; 
         flex-direction: row;
     }
+
+    nav a:hover{
+      color: white;
+  }
 
     .button {
         background-color: #8C705F;
