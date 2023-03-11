@@ -1,44 +1,14 @@
 body{
     background-color: #EEE6E1;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-#namebox{
-    top: 0; 
-    border-radius: 10px;
-    color: #280003; 
-    /* width: 50%; */
-}
-
-#name
-{
-    text-align: left;
-    padding-left: 5%;
-    top: 0;
-    font-size: 30px;
-}
-
-#pronouns
-{
-    text-align: left;
-    padding-left: 5%;
-    top: 0;
-    font-size: 20px;
-}
-
-#hi
-{
-    text-align: left;
-    padding-left: 5%;
-    top: 0;
-    font-size: 20px;
+    font-family:fantasy;
 }
 
 /* Nav bar on the top */
-
 nav {
     padding: .5em;
     top: 0; 
     position: sticky; 
+    background-color: #EEE6E1;
   }
   
   nav ul {
@@ -53,111 +23,118 @@ nav {
     color: #8C705F;
     text-decoration: none;
     padding: .5em 1em;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-weight: bold; 
+    font-weight: 500;
   }
 
   nav a:hover{
     color:#280003;
 }
 
-  .social-icons a {
-    border-radius: 50px;
-    color: #3f345f;
-    display: inline-block;
-    line-height: 52px;
-    height: 50px;
-    width: 50px;
-    box-shadow: 0 5px 25px rgba(93, 70, 232, 0.15);
-    margin: 15px 15px;
-    font-size: 22px;
+/* Overlaying images*/
+.image{
+  width: 100%; 
+  height: 100%; 
+  background-position: center;
+  background-size: cover;
+  width: 100%; 
+  height: 100vh; 
+  justify-content: center;
+  align-items: center;
+  color: white; 
+  letter-spacing: 2px;
+  background-image: linear-gradient(to top, transparent, rgba(136, 183, 183, 0.5), rgb(137, 213, 213, 0.5)), url(/img/background.png)
 }
 
-#aboutme
-{
-    font-size:large; 
-    padding-left: 3%;
+.photo{
+  transition: 10s;
+  position: absolute;
 }
 
-img{
-  transition: 2s;
-}
+.hover_img {
+  top: 0;
+  left: 0;
+  display: none;
+  transition: 10s;
+  }
 
-img:hover{
-  opacity: 0.5;
-  
-}
+.photo:hover .hover_img {
+  display: inline;
+  transition: 10s;
+  }
 
-.grid {
+/* Info about me */
+
+  #name{
+      /* text-align: left;
+      padding-left: 5%; */
+      /* top: 0; */
+      font-size: 30px;
+      background-color: #EEE6E1;
+      color: #280003;
+  }
+
+  #pronouns{
+      text-align: left;
+      padding-left: 5%;
+      top: 0;
+      font-size: 20px;
+  }
+
+  #aboutme{
+      font-size:large; 
+      padding-left: 3%;
+  }
+
+  .grid{
     margin: 0 auto;
     padding: 0 20px;
     max-width: 980px;
     display: grid; 
     grid-gap: 10px 10px;
     grid-template-columns: 3fr 1fr;
+    background-color:  #EEE6E1;
+    color: #280003;
   }
 
-.photos {
-    list-style: none;
-    width: 20px; 
-    height: 20; 
-    margin: 0;
-    padding: 0;
-    display: grid; 
-    grid-gap: 1px;
-    grid-template-columns: 1fr 1fr;
-  }
-
-/* Social media buttons */
-.social_media
-{
-  text-align: center;
+/* social media buttons on the bottom */
+  .social_media{
+    text-align: center;
     bottom: 0px;
     left: 100px;
-}
-.button {
-    background-color: #280003; /* Green */
-    border: none;
+    display: flex;
+  }
+  .button {
+    margin: 4px;
+    text-align: center;
+    background-color: #280003;
     color: #EEE6E1;
     padding: 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 13px;
-    margin: 4px 2px;
-    cursor: pointer;
     border-radius: 12px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-align: center;
-    display:inline-block;
-  }
+    font-family:fantasy;
+    }
+
+/* #flex-child1
+{
+    order:1;
+}
+
+
+#flex-child2
+{
+    order:2;
+}
+
+
+#flex-child3
+{
+    order:3;
+} */
 
   .button:hover {
     background-color: #8C705F;
     }
 
-
-    #pot {
-      bottom: 15%;
-      position: absolute;
-      animation: linear infinite alternate;
-      animation-name: run;
-      animation-duration: 5s;
-    }
-    @keyframes run {
-      0% {
-        left: 0;
-      }
-      50% {
-        right: 0;
-      }
-      100% {
-        left: 0;
-        transform: scaleX(-1);
-      }
-    }
-
-    /* changes appearance for smaller screens like mobiles */
+/* changes appearance for smaller screens like mobiles */
   @media only screen and (max-width: 500px)
   { /* before it reaches 500px then applies the following */
       body {
