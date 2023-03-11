@@ -38,6 +38,7 @@ nav {
   background-size: cover;
   width: 100%; 
   height: 100vh; 
+  display: flex; 
   justify-content: center;
   align-items: center;
   color: white; 
@@ -50,38 +51,33 @@ nav {
   position: absolute;
 }
 
-.hover_img {
-  top: 0;
-  left: 0;
-  display: none;
-  transition: 10s;
-  }
+#myphoto
+{
+  transition: 2s;
+}
 
-.photo:hover .hover_img {
-  display: inline;
-  transition: 10s;
-  }
+#myphoto:hover{
+  opacity: 0.5;
+}
 
 /* Info about me */
 
   #name{
-      /* text-align: left;
-      padding-left: 5%; */
-      /* top: 0; */
-      font-size: 30px;
+      text-align: center;
+      font-size: 40px;
       background-color: #EEE6E1;
       color: #280003;
   }
 
-  #pronouns{
+  /* #pronouns{
       text-align: left;
       padding-left: 5%;
       top: 0;
-      font-size: 20px;
-  }
+      font-size: 30px;
+  } */
 
   #aboutme{
-      font-size:large; 
+      font-size:25px; 
       padding-left: 3%;
   }
 
@@ -159,6 +155,11 @@ nav {
     nav a:hover{
       color: white;
   }
+
+  /* .grid {
+    display:flex; 
+    flex
+  } */
 
     .button {
         background-color: #8C705F;
