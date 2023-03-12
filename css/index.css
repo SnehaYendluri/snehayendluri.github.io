@@ -1,190 +1,195 @@
 body{
-    background-color: #EEE6E1;
-    font-family:fantasy;
-    margin:0; 
+  background-color: #EEE6E1;
+  font-family:fantasy;
+  margin:0; 
 }
 
 /* Nav bar on the top */
 nav {
-    top: 0; 
-    position: sticky; 
-    background-color: #EEE6E1;
-  }
-  
-  nav ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    display: flex;
-    position: sticky; 
-    justify-content: space-between;
-  }
-  
-  nav a {
-    color: #8C705F;
-    text-decoration: none;
-    padding: .5em 1em;
-    font-weight: 500;
-  }
+  top: 0; 
+  position: sticky; 
+  background-color: #EEE6E1;
+}
 
-  nav a:hover{
-    color:#280003;
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  position: sticky; 
+  justify-content: space-between;
+}
+
+nav a {
+  color: #8C705F;
+  text-decoration: none;
+  padding: .5em 1em;
+  font-weight: 500;
+}
+
+nav a:hover{
+  color:#280003;
 }
 
 /* Overlaying images*/
 .image{
-  width: 100%; 
-  height: 100%; 
-  background-position: center;
-  background-size: cover;
-  width: 100%; 
-  height: 100vh; 
-  display: flex; 
-  justify-content: center;
-  align-items: center;
-  color: white; 
-  letter-spacing: 2px;
-  background-image: linear-gradient(to top, transparent, rgba(136, 183, 183, 0.5), rgb(137, 213, 213, 0.5)), url(/img/background.png)
+width: 100%; 
+height: 100%; 
+background-position: center;
+background-size: cover;
+width: 100%; 
+height: 100vh; 
+display: flex; 
+justify-content: center;
+align-items: center;
+color: white; 
+letter-spacing: 2px;
+background-image: linear-gradient(to top, transparent, rgba(136, 183, 183, 0.5), rgb(137, 213, 213, 0.5)), url(/img/background.png)
 }
 
 .photo{
-  transition: 10s;
-  position: relative;
+transition: 10s;
+position: relative;
 }
 
-#myphoto
+.myphoto
 {
+  width: 170px; 
+  height: 230px; 
+  align-items: center;
+  padding-left: 20%;
   transition: 2s;
+  border-radius: 12px;
 }
 
-#myphoto:hover{
-  opacity: 0.5;
+.myphoto:hover{
+opacity: 0.5;
 }
 
 /* Info about me */
 
-  #name{
-    font-size:40px; 
-    padding-left: 50vh;
-    animation: bounce 1s linear;
-  }
-
-  @keyframes bounce {
-    0% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(-20px);
-    }
-    100% {
-      transform: translateY(0);
-    }
-  }
-
-  #aboutme{
-      font-size:25px; 
-      padding-left: 3%;
-  }
-
-  .grid{
-    margin: 0 auto;
-    padding: 0 20px;
-    max-width: 980px;
-    display: grid; 
-    grid-gap: 10px 10px;
-    grid-template-columns: 3fr 1fr;
-    background-color:  rgb(238, 230, 225, 0.6);
-    color: #280003;
-  }
-
-/* social media buttons on the bottom */
-  .social_media{
-    grid-template-columns: repeat(3, 1fr);
-    align-items: center;
-    position: absolute;
-  }
-  
-  .button {
-    margin: 4px;
-    text-align: center;
-    background-color: rgb(40, 0, 3, 0.75);
-    color: #EEE6E1;
-    padding: 10px;
-    border-radius: 12px;
-    font-family:fantasy;
-    }
-
-  .button:hover {
-    background-color: #8C705F;
-    }
-
-/* changes appearance for smaller screens like mobiles */
-  @media only screen and (max-width: 600px)
-  { /* before it reaches 500px then applies the following */
-      body {
-        background-color: black; 
-        color: #EEE6E1;
-        margin: 0; 
-        }
-
-    nav { 
-        position: sticky; 
-        background-color: black;
-    }
-    
-    nav ul {
-        display: flex; 
-        flex-direction: row;
-        margin: 0;
-        padding: 0;
-    }
-
-    nav a:hover{
-      color: white;
-  }
-
-  #name{
-    padding-left: 10px;
-    font-size: 25px;
-    color: #EEE6E1;
+#name{
+  font-size:40px; 
+  padding-left: 50vh;
+  animation: bounce 1s linear;
 }
 
-  #aboutme{
-    font-size: 15px; 
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+#aboutme{
+    font-size:25px; 
     padding-left: 3%;
 }
 
-.photo{
-  transition: 10s;
-  position: relative;
-  height: 30;
+.grid{
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: 980px;
+  display: grid; 
+  grid-gap: 5px;
+  grid-template-columns: 3fr 1fr;
+  background-color:  rgb(238, 230, 225, 0.6);
+  color: #280003;
+  border-radius: 12px;
 }
 
-  .grid {
-    margin: 0 auto;
-    max-width: 400px;
-    display: grid; 
-    grid-gap: 10px 10px;
-    grid-template-columns: 4fr 1fr;
-    background-color:rgb(0, 0, 0, 0.5);
-    color: #EEE6E1; 
+/* social media buttons on the bottom */
+.social_media{
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  position: absolute;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 10px;
+    background-color: #280003;
+    color: #EEE6E1;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 0 10px;
+    border-radius: 12px;
+  }
+
+.button:hover {
+  background-color: #8C705F;
   }
   
-  .social_media{
-    align-items: center;
-    position: absolute;
+/* changes appearance for smaller screens like mobiles */
+@media only screen and (max-width: 800px)
+{ /* before it reaches 500px then applies the following */
+    body {
+      background-color: black; 
+      color: #EEE6E1;
+      margin: 0; 
+      }
+
+  nav { 
+      position: sticky; 
+      background-color: black;
   }
   
-  .button {
-    text-align: center;
-    background-color: rgb(140, 112, 95);
+  nav ul {
+      display: flex; 
+      flex-direction: row;
+      margin: 0;
+      padding: 0;
+  }
+
+  nav a:hover{
     color: white;
-    padding: 0.5px;
-    font-family:fantasy;
-    }
+}
 
-    .button:hover {
-        background-color: #280003;
-    }
+#name{
+  padding-left: 10px;
+  font-size: 25px;
+  color: #EEE6E1;
+}
 
+#aboutme{
+  font-size: 15px; 
+}
+
+.myphoto {
+  padding-left: 15%;
+}
+
+.grid {
+  margin: 0 auto;
+  max-width: 600px;
+  display: grid; 
+  grid-gap: 5px;
+  background-color:rgb(0, 0, 0, 0.5);
+  color: #EEE6E1; 
+}
+
+.button {
+  background-color: rgb(140, 112, 95);
+  color: white;
+  font-size: 10px;
+  font-weight: bold;
+  padding: 5px;
   }
+
+  .button:hover {
+      background-color: #280003;
+      transition: 1.5s; 
+  }
+
+}
