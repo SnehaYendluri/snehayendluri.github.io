@@ -1,11 +1,11 @@
 body{
     background-color: #EEE6E1;
     font-family:fantasy;
+    margin:0; 
 }
 
 /* Nav bar on the top */
 nav {
-    padding: .5em;
     top: 0; 
     position: sticky; 
     background-color: #EEE6E1;
@@ -16,6 +16,7 @@ nav {
     padding: 0;
     list-style: none;
     display: flex;
+    position: sticky; 
     justify-content: space-between;
   }
   
@@ -63,18 +64,16 @@ nav {
 /* Info about me */
 
   #name{
-      text-align: center;
       font-size: 40px;
-      background-color: #EEE6E1;
       color: #280003;
   }
 
-  /* #pronouns{
+  #pronouns{
       text-align: left;
       padding-left: 5%;
       top: 0;
       font-size: 30px;
-  } */
+  }
 
   #aboutme{
       font-size:25px; 
@@ -88,44 +87,26 @@ nav {
     display: grid; 
     grid-gap: 10px 10px;
     grid-template-columns: 3fr 1fr;
-    background-color:  #EEE6E1;
+    background-color:  rgb(238, 230, 225, 0.6);
     color: #280003;
   }
 
 /* social media buttons on the bottom */
   .social_media{
-    text-align: center;
+    grid-template-columns: repeat(3, 1fr);
     align-items: center;
-    bottom: 0px;
-    left: 100px;
-    display: flex;
+    position: absolute;
   }
+  
   .button {
     margin: 4px;
     text-align: center;
-    background-color: #280003;
+    background-color: rgb(40, 0, 3, 0.75);
     color: #EEE6E1;
-    padding: 20px;
+    padding: 10px;
     border-radius: 12px;
     font-family:fantasy;
     }
-
-/* #flex-child1
-{
-    order:1;
-}
-
-
-#flex-child2
-{
-    order:2;
-}
-
-
-#flex-child3
-{
-    order:3;
-} */
 
   .button:hover {
     background-color: #8C705F;
@@ -137,12 +118,9 @@ nav {
       body {
         background-color: black; 
         color: #EEE6E1;
+        margin: 0; 
         }
 
-    #namebox{
-        color: #EEE6E1; 
-    }
-    
     nav { 
         position: sticky; 
         background-color: black;
@@ -151,6 +129,8 @@ nav {
     nav ul {
         display: flex; 
         flex-direction: row;
+        margin: 0;
+        padding: 0;
     }
 
     nav a:hover{
@@ -160,8 +140,7 @@ nav {
   #name{
     text-align: center;
     font-size: 25px;
-    background-color: #EEE6E1;
-    color: #280003;
+    color: #EEE6E1;
 }
 
   #aboutme{
@@ -180,14 +159,24 @@ nav {
     max-width: 400px;
     display: grid; 
     grid-gap: 10px 10px;
-    grid-template-columns: 3fr 1fr;
-    background-color:  #EEE6E1;
-    color: #280003;
+    grid-template-columns: 4fr 1fr;
+    background-color:rgb(0, 0, 0, 0.5);
+    color: #EEE6E1; 
   }
+  
+  .social_media{
+    align-items: center;
+    position: absolute;
+  }
+  
+  .button {
+    text-align: center;
+    background-color: rgb(140, 112, 95);
+    color: white;
+    padding: 0.5px;
+    font-family:fantasy;
+    }
 
-    .button {
-        background-color: #8C705F;
-        }
     .button:hover {
         background-color: #280003;
     }
