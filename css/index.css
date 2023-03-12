@@ -48,7 +48,7 @@ nav {
 
 .photo{
   transition: 10s;
-  position: absolute;
+  position: relative;
 }
 
 #myphoto
@@ -95,6 +95,7 @@ nav {
 /* social media buttons on the bottom */
   .social_media{
     text-align: center;
+    align-items: center;
     bottom: 0px;
     left: 100px;
     display: flex;
@@ -131,7 +132,7 @@ nav {
     }
 
 /* changes appearance for smaller screens like mobiles */
-  @media only screen and (max-width: 500px)
+  @media only screen and (max-width: 600px)
   { /* before it reaches 500px then applies the following */
       body {
         background-color: black; 
@@ -156,10 +157,33 @@ nav {
       color: white;
   }
 
-  /* .grid {
-    display:flex; 
-    flex
-  } */
+  #name{
+    text-align: center;
+    font-size: 25px;
+    background-color: #EEE6E1;
+    color: #280003;
+}
+
+  #aboutme{
+    font-size: 15px; 
+    padding-left: 3%;
+}
+
+.photo{
+  transition: 10s;
+  position: relative;
+  height: 30;
+}
+
+  .grid {
+    margin: 0 auto;
+    max-width: 400px;
+    display: grid; 
+    grid-gap: 10px 10px;
+    grid-template-columns: 3fr 1fr;
+    background-color:  #EEE6E1;
+    color: #280003;
+  }
 
     .button {
         background-color: #8C705F;
