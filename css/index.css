@@ -64,15 +64,21 @@ nav {
 /* Info about me */
 
   #name{
-      font-size: 40px;
-      color: #280003;
+    font-size:40px; 
+    padding-left: 50vh;
+    animation: bounce 1s linear;
   }
 
-  #pronouns{
-      text-align: left;
-      padding-left: 5%;
-      top: 0;
-      font-size: 30px;
+  @keyframes bounce {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+    100% {
+      transform: translateY(0);
+    }
   }
 
   #aboutme{
@@ -138,7 +144,7 @@ nav {
   }
 
   #name{
-    text-align: center;
+    padding-left: 10px;
     font-size: 25px;
     color: #EEE6E1;
 }
