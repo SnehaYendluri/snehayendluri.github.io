@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>In class exercise 9</title>
+    <style>
+        #button{
+            border: 5px solid rgb(96, 188, 234); 
+            border-radius: 20px;
+            background-color: black;
+            color: rgb(96, 188, 234); 
+            padding: 25px 50px; 
+            width: 200px; 
+            text-align: center;
+        }
+        p{
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div id="button">
+        <p> Click me! </p>
+    </div>
+
+    <div class="form">
+        <br>
+        <label for="guessField"> Enter a guess: </label>
+        <input type="number" min="1" max= "100" required id="guessField" class="guessField"> 
+        <input type="submit" value="submit guess" class="guessSubmit"> 
+    </div>
+
+    <div class="form">
+        <br>
+        <label for="firstname"> Enter you first name: </label>
+        <input type="string"required id="fnfield" class="fnfield"> 
+        <br>
+        <label for="lastname"> Enter you last name: </label>
+        <input type="string"required id="lnfield" class="lnfield"> 
+        <br>
+        <input type="submit" value="Submit your name" class="nameSubmit"> 
+        
+    </div>
+
+    <script>
+        console.log("hello"); 
+        let button = document.querySelector("#button"); 
+        let btn = document.querySelector("p"); 
+        // console.log(button);
+        
+        function changeBtn(){
+            console.log("This worked"); 
+            btn.textContent = "Success"; 
+            button.style.backgroundColor = "beige"; 
+            button.style.color = "black";  
+        }
+        button.addEventListener('click', changeBtn); 
+
+        let userGuess = document.querySelector(".guessField"); 
+        // console.log(userGuess); 
+        let guessBtn = document.querySelector(".guessSubmit"); 
+        // console.log(guessBtn); 
+        function checkGuess()
+        {
+            alert("You have submitted a guess with a value of " + userGuess.value);
+        }
+        guessBtn.addEventListener('click', checkGuess)
+
+        let fn = document.querySelector(".fnfield"); 
+        // console.log(fn); 
+        let ln = document.querySelector(".lnfield"); 
+        // console.log(ln); 
+        let nameBtn = document.querySelector(".nameSubmit"); 
+        // console.log(nameBtn); 
+        function printName()
+        {
+            alert("Good morning " + fn.value + " " + ln.value + "! " + "How are you doing today?");
+        }
+        nameBtn.addEventListener('click', printName)
+
+    </script>
+</body>
+</html>
