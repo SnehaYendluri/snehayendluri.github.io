@@ -36,8 +36,7 @@
 - [WA6](https://snehayendluri.github.io/wa/wa6/index.html)
 - [WA7](https://snehayendluri.github.io/wa/week7.html)
 - [WA9](https://snehayendluri.github.io/wa/gallery_start/assignment9.html)
-- WA10
-- WA11
+- [WA11](https://snehayendluri.github.io/wa/wa11.html)
 - WA12
 - WA13
 - WA14
