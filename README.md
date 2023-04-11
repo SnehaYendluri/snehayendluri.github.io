@@ -22,7 +22,7 @@
 - [ICA10](https://snehayendluri.github.io/ica/ica10.html)
 - [ICA11](https://snehayendluri.github.io/ica/ica11.html)
 - [quiz10](https://snehayendluri.github.io/ica/quiz10.html)
-- ICA12
+- [ICA12](https://snehayendluri.github.io/ica/ica12.html)
 - ICA13
 - ICA14
 - ICA15
