@@ -73,24 +73,25 @@ class Ball {
   
 }
 
-const testBall = new Ball(50, 100, 4, 4, "blue", 10);
+// const testBall = new Ball(50, 100, 4, 4, "blue", 10);
 // const testBal1 = new Ball(400, 238, 2, 2, "red", 100);
 // const testBall2 = new Ball(700, 500, 4, 4, "aquamarine", 80);
-testBall.draw();
+// testBall.draw();
 // testBal1.draw();
 // testBall2.draw(); 
 
 const balls = [];
 
+// how many balls we want 
 while (balls.length < 25) {
-  const size = random(10, 20);
+  const size = random(10, 20); // determining the hypothetical smallest and largest ball you can have 
   const ball = new Ball(
     // ball position always drawn at least one ball width
     // away from the edge of the canvas, to avoid drawing errors
-    random(0 + size, width - size),
-    random(0 + size, height - size),
-    random(-5, 5),
-    random(-5, 5),
+    random(0 + size, width - size), // random position 
+    random(0 + size, height - size),  // random position 
+    random(-5, 5), // random speed x 
+    random(-5, 5), // random speed y 
     randomRGB(),
     size
   );
