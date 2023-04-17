@@ -39,7 +39,7 @@
 - [WA9](https://snehayendluri.github.io/wa/gallery_start/assignment9.html)
 - [WA11](https://snehayendluri.github.io/wa/wa11.html)
 - [WA12](https://snehayendluri.github.io/wa/wa12.html)
-- WA13
+- [WA13](https://snehayendluri.github.io/wa/wa13/wa13.html)
 - WA14
 - WA15
 
