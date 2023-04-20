@@ -23,7 +23,7 @@
 - [ICA11](https://snehayendluri.github.io/ica/ica11.html)
 - [quiz10](https://snehayendluri.github.io/ica/quiz10.html)
 - [ICA12](https://snehayendluri.github.io/ica/ica12.html)
-- ICA13
+- [ICA13](https://snehayendluri.github.io/wa/wa13/wa13.html)
 - ICA14
 - ICA15
 
@@ -39,7 +39,7 @@
 - [WA9](https://snehayendluri.github.io/wa/gallery_start/assignment9.html)
 - [WA11](https://snehayendluri.github.io/wa/wa11.html)
 - [WA12](https://snehayendluri.github.io/wa/wa12.html)
-- [WA13](https://snehayendluri.github.io/wa/wa13/wa13.html)
+- [WA13](https://snehayendluri.github.io/wa/badVolumeDesign/volumeDesign.html)
 - WA14
 - WA15
 
