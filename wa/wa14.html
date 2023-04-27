@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Zooms into the Washing DC stations</title>
+<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+<link href="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.css" rel="stylesheet">
+<script src="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.js"></script>
+<style>
+body { margin: 0; padding: 0; }
+#map { position: absolute; top: 0; bottom: 0; width: 100%; }
+</style>
+</head>
+<body>
+<div id="map"></div>
+<script>
+	mapboxgl.accessToken = 'pk.eyJ1Ijoic255ZTg2NTUiLCJhIjoiY2xnc3F2cXBpMDhxcjNuczdlYmx2OWowOCJ9.-reyEjVHIcu2OBzuVH5lqA';
+    const map = new mapboxgl.Map({
+        container: 'map', // container ID
+        // Choose from Mapbox's core styles, or make your own style with Mapbox Studio
+        style: 'mapbox://styles/snye8655/clgznepxa006u01r76y4ff0bx', // style URL
+        center: [-98.5795, 39.8283], // starting position [lng, lat]
+        zoom: 3 // starting zoom
+    });
+    
+    // Adding a marker at each Washington station location
+    var stations = [
+      {
+        name: 'Union Station',
+        coordinates: [-77.0052, 38.8974]
+      },
+      {
+        name: 'Metro Center Station',
+        coordinates: [-77.0282, 38.8983]
+      },
+      {
+        name: 'Farragut West Station',
+        coordinates: [-77.0397, 38.9013]
+      },
+      {
+        name: 'Rosslyn Station',
+        coordinates: [-77.0709, 38.8961]
+      },
+      {
+        name: 'Crystal City Station',
+        coordinates: [-77.0502, 38.8563]
+      },
+      {
+        name: 'Pentagon Station',
+        coordinates: [-77.0552, 38.8695]
+      }
+    ];
+    
+    stations.forEach(function(station) {
+      var el = document.createElement('div');
+      el.className = 'marker';
+      new mapboxgl.Marker(el)
+        .setLngLat(station.coordinates)
+        .setPopup(new mapboxgl.Popup({ offset: 25 }) // add popups
+        .setHTML('<h3>' + station.name + '</h3>'))
+        .addTo(map);
+    });
+    
+    // Fly to Washington and zoom in
+    map.flyTo({
+        center: [-77.0369, 38.9072],
+        zoom: 13,
+        speed: 0.5,
+        curve: 1,
+        easing: function(t) {
+            return t;
+        }
+    });
+</script>
+
+</body>
+</html>

@@ -40,7 +40,7 @@
 - [WA11](https://snehayendluri.github.io/wa/wa11.html)
 - [WA12](https://snehayendluri.github.io/wa/wa12.html)
 - [WA13](https://snehayendluri.github.io/wa/badVolumeDesign/volumeDesign.html)
-- WA14
+- [WA14](https://snehayendluri.github.io/wa/wa14.html)
 - WA15
 
 ## CSS Midterm 
