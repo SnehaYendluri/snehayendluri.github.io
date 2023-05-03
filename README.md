@@ -46,3 +46,8 @@
 ## CSS Midterm 
 
 - [index](https://snehayendluri.github.io)
+
+
+## Javascript Midterm 
+
+- [index](https://snehayendluri.github.io/javascript_final/connect4.html)
