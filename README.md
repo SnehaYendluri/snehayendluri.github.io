@@ -50,4 +50,4 @@
 
 ## Javascript Midterm 
 
-- [index](https://snehayendluri.github.io/javascript_final/connect4.html)
+- [Connect4 game](https://snehayendluri.github.io/javascript_final/connect4.html)
