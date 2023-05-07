@@ -169,9 +169,9 @@ function checkWinner() {
 function setWinner(r, c) {
     let winner = document.getElementById("winner");
     if (board[r][c] == playerRed) {
-        winner.innerText = "Yayay! " + player2Input.textContent + " Wins";             
+        winner.innerText = "Yayay! " + player2Input.textContent + " wins the game :)";             
     } else {
-        winner.innerText =  "Yayay! " + player1Input.textContent + " Wins";             
+        winner.innerText =  "Yayay! " + player1Input.textContent + " wins the game :)";             
     }
     // sets the game over to true so that the players cannot take turns anymore 
     gameOver = true;
