@@ -1,5 +1,3 @@
-
-
 var playerRed = "R";
 var playerYellow = "Y";
 var currPlayer = playerRed;
@@ -10,9 +8,35 @@ var board;
 var rows = 6;
 var columns = 7;
 var currColumns = []; //keeps track of which row each column is at.
+var player1Input;
+var player2Input;
 
 window.onload = function() {
-    setGame();
+    player1Input = document.getElementById("player1-name");
+    player2Input = document.getElementById("player2-name");
+
+    console.log("Player 1 name: ", player1Input)
+    console.log("Player 2 name: ",player2Input)
+
+    document.querySelector('form').addEventListener('submit', startGame);
+}
+
+function startGame(event) {
+    event.preventDefault();
+
+    let player1Name = document.querySelector('#player1').value;
+    let player2Name = document.querySelector('#player2').value;
+
+    player1Input.textContent = player1Name;
+    player2Input.textContent = player2Name;
+
+    player1Input.classList.add('player-name');
+    player2Input.classList.add('player-name');
+
+    document.querySelector('#player-names').style.display = 'none';
+    document.querySelector('#game').style.display = 'block';
+
+    setGame(player1Name, player2Name);
 }
 
 function setGame() {
@@ -57,12 +81,12 @@ function setPiece() {
     if (currPlayer == playerRed) {
         tile.classList.add("red-piece");
         currPlayer = playerYellow;
-        winner.innerText = "Player 2";
+        winner.innerText = player2Input.textContent;
     }
     else {
         tile.classList.add("yellow-piece");
         currPlayer = playerRed;
-        winner.innerText = "Player 1";
+        winner.innerText = player1Input.textContent;
     }
 
     r -= 1; //update the row height for that column
@@ -124,9 +148,9 @@ function checkWinner() {
 function setWinner(r, c) {
     let winner = document.getElementById("winner");
     if (board[r][c] == playerRed) {
-        winner.innerText = "Player 2 Wins";             
+        winner.innerText = "Yayay! " + player2Input.textContent + " Wins";             
     } else {
-        winner.innerText = "Player 1 Wins";
+        winner.innerText =  "Yayay! " + player1Input.textContent + " Wins";             
     }
     gameOver = true;
 }

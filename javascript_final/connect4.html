@@ -7,22 +7,37 @@
     <title>Connect 4</title>
     <link rel="stylesheet" href="connect4.css">
     <script src="connect4.js"></script>
-</head>
-<body>
-    <div id="information">
-        <div class="players">
-            Player 1
-            <div class="player1"></div>
-        </div>
-        <div>
-            <h1>Connect 4</h1>
-            <h2 id="winner"> Player 1</h2>
-        </div>
-        <div class="players">
-            Player 2
-            <div class="player2"></div>
-        </div>
+</head><body>
+    <div id="player-names" >
+        <h1 class="heading1"> Excited to play connect4 game!</h1>
+        <h3 class="heading2">Please enter the Player Names</h3>
+        <form>
+            <label for="player1">Player 1:</label>
+            <input type="text" id="player1" required><br>
+
+            <label for="player2">Player 2:</label>
+            <input type="text" id="player2" required><br>
+
+            <button type="submit" id="start-game">Start Game</button>
+        </form>
     </div>
-    <div id="board"></div>
+
+    <div id="game" style="display:none">
+        <div id="information">
+            <div class="players">
+                <span id="player1-name"></span>
+                <div class="player1"></div>
+            </div>
+            <div>
+                <h1>Connect 4</h1>
+                <h2 id="winner"></h2>
+            </div>
+            <div class="players">
+                <span id="player2-name"></span>
+                <div class="player2"></div>
+            </div>
+        </div>
+        <div id="board"></div>
+    </div>
 </body>
 </html>
