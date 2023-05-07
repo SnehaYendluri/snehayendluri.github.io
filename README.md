@@ -24,8 +24,6 @@
 - [quiz10](https://snehayendluri.github.io/ica/quiz10.html)
 - [ICA12](https://snehayendluri.github.io/ica/ica12.html)
 - [ICA13](https://snehayendluri.github.io/wa/wa13/wa13.html)
-- ICA14
-- ICA15
 
 ## Weekly Assignments
 
@@ -41,7 +39,6 @@
 - [WA12](https://snehayendluri.github.io/wa/wa12.html)
 - [WA13](https://snehayendluri.github.io/wa/badVolumeDesign/volumeDesign.html)
 - [WA14](https://snehayendluri.github.io/wa/wa14.html)
-- WA15
 
 ## CSS Midterm 
 
