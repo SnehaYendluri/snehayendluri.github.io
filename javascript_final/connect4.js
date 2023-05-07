@@ -27,18 +27,24 @@ function startGame(event) {
     let player1Name = document.querySelector('#player1').value;
     let player2Name = document.querySelector('#player2').value;
 
+    // changing the players names 
     player1Input.textContent = player1Name;
     player2Input.textContent = player2Name;
 
-    player1Input.classList.add('player-name');
-    player2Input.classList.add('player-name');
+    player1Input.classList.add('player-name'); // adding the css 
+    player2Input.classList.add('player-name'); // adding the css
+
+    // the starting player 
+    winner.innerText = player1Input.textContent;
 
     document.querySelector('#player-names').style.display = 'none';
     document.querySelector('#game').style.display = 'block';
 
+    // starts the game 
     setGame(player1Name, player2Name);
 }
 
+// sets the board 
 function setGame() {
     board = [];
     currColumns = [5, 5, 5, 5, 5, 5, 5];
@@ -59,6 +65,7 @@ function setGame() {
     }
 }
 
+// each piece 
 function setPiece() {
     if (gameOver) {
         return;
@@ -78,6 +85,7 @@ function setPiece() {
 
     board[r][c] = currPlayer; //update JS board
     let tile = document.getElementById(r.toString() + "-" + c.toString());
+    // turns 
     if (currPlayer == playerRed) {
         tile.classList.add("red-piece");
         currPlayer = playerYellow;
@@ -92,9 +100,10 @@ function setPiece() {
     r -= 1; //update the row height for that column
     currColumns[c] = r; //update the array
 
-    checkWinner();
+    checkWinner(); // checks if there is a winner everytime the player takes a turn 
 }
 
+// conditions to win the game 
 function checkWinner() {
      // horizontal
      for (let r = 0; r < rows; r++) {
@@ -120,7 +129,7 @@ function checkWinner() {
         }
     }
 
-    // anti diagonal
+    // the other diagonal
     for (let r = 0; r < rows - 3; r++) {
         for (let c = 0; c < columns - 3; c++) {
             if (board[r][c] != ' ') {
@@ -145,6 +154,7 @@ function checkWinner() {
     }
 }
 
+// sets the winner text on the top 
 function setWinner(r, c) {
     let winner = document.getElementById("winner");
     if (board[r][c] == playerRed) {
@@ -152,5 +162,6 @@ function setWinner(r, c) {
     } else {
         winner.innerText =  "Yayay! " + player1Input.textContent + " Wins";             
     }
+    // sets the game over to true so that the players cannot take turns anymore 
     gameOver = true;
 }
