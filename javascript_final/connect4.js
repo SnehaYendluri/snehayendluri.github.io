@@ -10,6 +10,7 @@ var columns = 7;
 var currColumns = []; //keeps track of which row each column is at.
 var player1Input;
 var player2Input;
+var piececount = 0; 
 
 window.onload = function() {
     player1Input = document.getElementById("player1-name");
@@ -84,6 +85,9 @@ function setPiece() {
     }
 
     board[r][c] = currPlayer; //update JS board
+    piececount++; 
+
+    // console.log("the row count: ", r)
     let tile = document.getElementById(r.toString() + "-" + c.toString());
     // turns 
     if (currPlayer == playerRed) {
@@ -151,6 +155,13 @@ function checkWinner() {
                 }
             }
         }
+    }
+
+    // if it is a tie then print it 
+    if (piececount == (columns * rows))
+    {
+        winner.textContent = "It's a tie";
+        return; 
     }
 }
 

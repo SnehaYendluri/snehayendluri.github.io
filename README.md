@@ -44,7 +44,6 @@
 
 - [index](https://snehayendluri.github.io)
 
-
 ## Javascript Midterm 
 
 - [Connect4 game](https://snehayendluri.github.io/javascript_final/connect4.html)
